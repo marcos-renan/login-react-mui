@@ -28,7 +28,7 @@ const Login = () => {
             <TextField type="email" placeholder="E-mail" variant="outlined" required/>
           </FormControl>
           {/* input da senha */}
-          <TextField type="password" placeholder="E-Senha" variant="outlined" required/>
+          <TextField type="password" placeholder="Senha" variant="outlined" required/>
           {/* botao de entrar*/}
           <Button type="submit" variant="contained" color="primary">Entrar</Button>
         </Box>
