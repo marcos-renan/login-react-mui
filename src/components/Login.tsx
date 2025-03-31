@@ -1,5 +1,6 @@
 import { Box, Button, FormControl, Link, TextField, Typography } from "@mui/material";
 import { Google, Facebook } from "@mui/icons-material";
+import LockIcon from '@mui/icons-material/Lock';
 
 const Login = () => {
 
@@ -7,9 +8,20 @@ const Login = () => {
     <>
       {/* container principal */} {/* */}
       <Box display="flex" flexDirection="column" minHeight="100vh" alignItems="center" justifyContent="center">
-        <Typography variant="h3" align="center"> Login</Typography>
+        {/* caixa para o icone principal */}
+        <Box display="flex" justifyContent="center" alignItems="center" sx={{
+          bgcolor:"#9c27b0",
+          width:"36px",
+          height:"36px",
+          borderRadius:"50%"
+        }}>
+          {/* icone */}
+          <LockIcon sx={{color:"#FFF"}}/>
+        </Box>
+        {/* Titulo login */}
+        <Typography variant="h4" align="center"><strong>Sign In</strong></Typography>
         {/* container do formulario */}
-        <Box display="flex" flexDirection="column" component="form" maxWidth="360px" gap={2} width="100%" marginTop="25px">
+        <Box display="flex" flexDirection="column" component="form" maxWidth="360px" gap={2} width="100%" mt={4}>
           {/* formulario */}
           <FormControl>
             {/* input do email*/}
